@@ -1,7 +1,7 @@
 # ejercicios-flex-y-bison
 1️¿La calculadora acepta una línea que solo tenga un comentario?
 
-No, no la acepta correctamente. Cuando se escribe solo un comentario, el scanner elimina el texto del comentario, pero el salto de línea sigue existiendo y se envía como EOL. El parser espera siempre una expresión antes del EOL, así que cuando recibe solo el salto de línea produce un error de sintaxis. Lo más sencillo es modificar la gramática para que también permita líneas vacías, en lugar de cambiar el scanner.
+No, no la acepta correctamente. Cuando se escribe solo un comentario, el scanner elimina el texto del comentario, pero el salto de línea sigue existiendo y se envía como EOL. El parser espera siempre una expresión antes del EOL, así que cuando recibe solo el salto de línea produce un error de sintaxis.seria lo más sencillo es modificar la gramática para que también permita líneas vacías, en lugar de cambiar el scanner.
 
 2️¿Qué pasa si usamos | tanto para valor absoluto como para OR binario?
 
